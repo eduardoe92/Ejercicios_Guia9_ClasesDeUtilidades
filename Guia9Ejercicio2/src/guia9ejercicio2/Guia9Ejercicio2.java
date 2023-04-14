@@ -28,8 +28,10 @@ public class Guia9Ejercicio2 {
         ParDeNumerosServices num = new ParDeNumerosServices();
         ParDeNumeros nume = new ParDeNumeros();
         num.mostrarValores(nume);
-        System.out.println("El número mayor es " + num.devolverMayor(nume));
-        System.out.println("La potencia es " + num.calcularPotencia(nume));
-        System.out.println("La raíz es " +num.calcularRaiz(nume));
+        System.out.println("=========================================================");
+        System.out.println("El número mayor es: " + num.devolverMayor(nume));
+        System.out.println("La potencia del número mayor es: " + num.calcularPotencia(nume));
+        System.out.println("La raíz del número menor es: " +num.calcularRaiz(nume));
+        System.out.println("=========================================================");
     }
 }

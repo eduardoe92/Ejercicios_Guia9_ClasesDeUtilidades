@@ -16,12 +16,31 @@ mostrar A y B.
  */
 
 package guia9ejercicio3;
-import java.util.Scanner;
+import Servicios.ArraysService;
 
 public class Guia9Ejercicio3 {
 
     public static void main(String[] args) {
+        double[] arregloA = new double[50];
+        double[] arregloB = new double[20];
         
+        ArraysService.inicializarA(arregloA);
+        
+        System.out.println("Arreglo A:");
+        ArraysService.mostrar(arregloA);
+        
+        ArraysService.ordenar(arregloA);
+        
+        System.out.println("Arreglo A ordenado:");
+        ArraysService.mostrar(arregloA);
+        
+        ArraysService.inicializarB(arregloA, arregloB);
+        
+        System.out.println("Arreglo A:");
+        ArraysService.mostrar(arregloA);
+        
+        System.out.println("Arreglo B:");
+        ArraysService.mostrar(arregloB);
     }
 
 }
