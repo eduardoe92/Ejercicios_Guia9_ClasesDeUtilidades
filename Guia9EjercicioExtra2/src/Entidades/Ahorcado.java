@@ -63,14 +63,8 @@ Mensaje: La letra no pertenece a la palabra
 Mensaje: Lo sentimos, no hay más oportunidades
  */
 
-package guia9ejercicioextra2;
+package Entidades;
 
-import java.util.Scanner;
-
-public class Guia9EjercicioExtra2 {
-
-    public static void main(String[] args) {
-        
-    }
-
+public class Ahorcado {
+    
 }

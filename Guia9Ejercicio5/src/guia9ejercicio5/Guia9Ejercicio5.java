@@ -15,12 +15,28 @@ deseada.
  */
 
 package guia9ejercicio5;
+import Entidades.Persona;
+import Servicios.PersonaServicio;
 import java.util.Scanner;
 
 public class Guia9Ejercicio5 {
 
     public static void main(String[] args) {
-        
-    }
 
+        Scanner leer = new Scanner(System.in).useDelimiter("\n");
+
+        PersonaServicio s1 = new PersonaServicio();
+        Persona p1 = s1.crearPersona();
+
+        System.out.print("Escribe una edad para comparar la base de datos: ");
+        int edadProvista = leer.nextInt();
+        
+        boolean var1 = s1.menorQue(p1, edadProvista);
+        if (var1) {
+            System.out.println("La persona es menor a la edad señalada");
+        } else {
+            System.out.println("La persona es mayor a la edad señalada");
+        }
+        System.out.println(p1);
+    }
 }

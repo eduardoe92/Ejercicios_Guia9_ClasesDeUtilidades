@@ -17,12 +17,16 @@ Oracle
  */
 
 package guia9ejercicio4;
-import java.util.Scanner;
+import Servicios.FechaService;
 
 public class Guia9Ejercicio4 {
 
     public static void main(String[] args) {
         
+        FechaService fecha = new FechaService();
+        
+        int edad = fecha.diferenciaAnios(fecha.fechaNacimiento(), fecha.fechaActual());
+        System.out.println("Su edad es: " + edad + " años");
     }
 
 }

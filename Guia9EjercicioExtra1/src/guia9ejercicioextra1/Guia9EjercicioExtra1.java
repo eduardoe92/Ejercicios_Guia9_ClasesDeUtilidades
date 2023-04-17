@@ -15,11 +15,14 @@ No ha acertado. Intente adivinarlo introduciendo otro mes: agosto
 
 package guia9ejercicioextra1;
 
-import java.util.Scanner;
+import Servicios.MesService;
 
 public class Guia9EjercicioExtra1 {
 
     public static void main(String[] args) {
+        
+        MesService mes = new MesService();
+        mes.AdivinaMesSecreto();
         
     }
 

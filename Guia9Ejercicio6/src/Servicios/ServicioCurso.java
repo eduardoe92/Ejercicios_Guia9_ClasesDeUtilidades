@@ -43,7 +43,7 @@ public class ServicioCurso {
     }
 
     public double calcularGananciaSemanal() {
-        double gananciaSemanal = curso.getCantidadHorasPorDia() * curso.getPrecioPorHora() * curso.getCantidadDiasPorSemana() * 5;
+        double gananciaSemanal = curso.getCantidadHorasPorDia() * curso.getPrecioPorHora() * curso.getAlumnos().length * curso.getCantidadDiasPorSemana();
         System.out.println("====================================================");
         System.out.println ("El total de ganancias semanales es: $" + gananciaSemanal);
         System.out.println("====================================================");
