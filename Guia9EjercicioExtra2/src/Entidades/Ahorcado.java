@@ -67,4 +67,50 @@ package Entidades;
 
 public class Ahorcado {
     
+    private String palabraSecreta[];
+    private int intentosRestantes;
+    private int cantidadJugadasMaxima;
+    private char[] letrasEncontradas;
+
+    public Ahorcado(String palabra, int intentosMax) {
+        intentosRestantes = intentosMax;
+        cantidadJugadasMaxima = intentosMax;
+        letrasEncontradas = new char[palabra.length()];
+        for(int i=0; i<palabra.length(); i++) {
+            letrasEncontradas[i] = '_';
+        }
+        palabraSecreta = palabra.split("");
+    }
+
+    public String[] getPalabraSecreta() {
+        return palabraSecreta;
+    }
+
+    public void setPalabraSecreta(String[] palabraSecreta) {
+        this.palabraSecreta = palabraSecreta;
+    }
+
+    public char[] getLetrasEncontradas() {
+    return letrasEncontradas;
+    }
+
+    public void setLetrasEncontradas(char[] letrasEncontradas) {
+        this.letrasEncontradas = letrasEncontradas;
+    }
+
+    public int getIntentosRestantes() {
+        return intentosRestantes;
+    }
+
+    public void setIntentosRestantes(int intentosRestantes) {
+        this.intentosRestantes = intentosRestantes;
+    }
+
+    public int getCantidadJugadasMaxima() {
+        return cantidadJugadasMaxima;
+    }
+
+    public void setCantidadJugadasMaxima(int cantidadJugadasMaxima) {
+        this.cantidadJugadasMaxima = cantidadJugadasMaxima;
+    }
 }

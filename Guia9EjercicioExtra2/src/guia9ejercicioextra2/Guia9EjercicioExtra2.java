@@ -65,12 +65,14 @@ Mensaje: Lo sentimos, no hay más oportunidades
 
 package guia9ejercicioextra2;
 
-import java.util.Scanner;
+import Entidades.Ahorcado;
+import Servicios.AhorcadoService;
 
 public class Guia9EjercicioExtra2 {
 
     public static void main(String[] args) {
-        
+        AhorcadoService as = new AhorcadoService();
+        Ahorcado a = as.crearJuego();
+        as.juego(a);
     }
-
 }
